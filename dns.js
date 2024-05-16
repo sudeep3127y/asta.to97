@@ -1,11 +1,11 @@
 <script>
 // Set up API endpoint and authentication
 const cloudflareApiEndpoint = "https://api.cloudflare.com/client/v4";
-const cloudflareApiToken = "your_api_token_here";
+const cloudflareApiToken = "9VPo9s5xiZkei_gjYynZA3T8cnX-gQRepKXyLwAv";
 
 // Define function to update DNS record
 function updateDnsRecord() {
-  const zoneId = "your_zone_id_here";
+  const zoneId = "All Zones";
   const dnsRecordId = "your_dns_record_id_here";
   const dnsRecordName = "your_dns_record_name_here";
   const dnsRecordType = "A";
@@ -16,8 +16,8 @@ function updateDnsRecord() {
   fetch(cloudflareApiEndpoint + endpoint, {
     method: "GET",
     headers: {
-      "X-Auth-Email": "your_email_here",
-      "X-Auth-Key": cloudflareApiToken,
+      "X-Auth-Email": "sb543267@gmail.com",
+      "X-Auth-Key": 9VPo9s5xiZkei_gjYynZA3T8cnX-gQRepKXyLwAv,
       "Content-Type": "application/json",
     },
   })
@@ -38,8 +38,8 @@ function updateDnsRecord() {
         fetch(cloudflareApiEndpoint + endpoint, {
           method: "PUT",
           headers: {
-            "X-Auth-Email": "your_email_here",
-            "X-Auth-Key": cloudflareApiToken,
+            "X-Auth-Email": "sb543267@gmail.com",
+            "X-Auth-Key": 9VPo9s5xiZkei_gjYynZA3T8cnX-gQRepKXyLwAv,
             "Content-Type": "application/json",
           },
           body: JSON.stringify(data),
